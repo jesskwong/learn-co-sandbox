@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+  <head><link rel="stylesheet" href="msgstyles.css">
+<link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Nanum+Brush+Script|Oranienbaum&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cuprum&amp;display=swap" rel="stylesheet">
+  </head>
+<body>
+  <h1>Inspirational Quotes For Everyone</h1>
+<p id="words">If you do what you’ve always done, you’ll get what you’ve always gotten.</p>
+<h2 id="myHeader">Which word describes how you are feeling today?</h2>
+<div class="button"> 
+<button onclick="quoteresult1()" >Happy</button>
+<button onclick="quoteresult2()" >Neutral</button>
+<button onclick="quoteresult3()" >Sad</button>
+</div>
+<h3>Feel free to click the button more than once to see a different quote!</h3>
+<script> 
+var quotes1 = [
+  "Let your smile change the world, but don't let the world change your smile.", 
+  "Security is mostly a superstition - life is either a daring adventure or nothing.",
+  "Creativity is intelligence having fun.",
+  "There are no traffic jams along the extra mile.",
+  "The only way to do great work is to love what you do.",
+  "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
+  "Go confidently in the direction of your dreams! Live the life you've imagined.",
+  "People who succeed have momentum. The more they succeed, the more they want to succeed and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy."
+ ];
+ var quotes2 = [
+    "Make your life a masterpiece; imagine no limitations on what you can be, have, or do.",
+     "Strive not to be a success, but rather to be of value.",
+     "The best revenge is massive success.",
+     "In order to succeed, your desire for success should be greater than your fear of failure.",
+      "If you do what you’ve always done, you’ll get what you’ve always gotten.",
+      "If life were predictable it would cease to be life, and be without flavor",
+      "Always remember that you are absolutely unique. Just like everyone else.",
+      "If you want to achieve excellence, you can get there today. As of this second, quit doing less-than-excellent work."
+   ];
+   var quotes3 = [
+     "You learn more from failure than success. Don't let it stop you. Failure builds character.",
+     "You are never too old to set another goal or to dream a new dream.",
+     "There are no limits to what you can accomplish, except the limits you place on your own thinking.",
+     "Leaders think and talk about solutions, while followers think and talk about problems.",
+     "Build your own dreams, or someone else will hire you to build theirs.",
+     "The battles that count aren't the ones for gold medals. The struggles within yourself--the invisible battles inside all of us--that's where it's at.",
+     "You will face many defeats in life, but never let yourself be defeated.",
+     "Life is a long lesson in humility."
+     ];
+
+function quoteresult1() {
+   console.log("Here's a quote!")
+  var number = Math.floor(Math.random() * 8);
+  document.getElementById("words").innerHTML = quotes1[number];
+}
+function quoteresult2() {
+  console.log("Here's another quote!")
+  var number = Math.floor(Math.random() * 8);
+  document.getElementById("words").innerHTML = quotes2[number];
+}
+function quoteresult3() {
+  console.log("Here's another quote!")
+  var number = Math.floor(Math.random() *8);
+  document.getElementById("words").innerHTML = quotes3[number];
+}
+</script>
+
+</body>
+</html>

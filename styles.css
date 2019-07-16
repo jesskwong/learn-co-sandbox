@@ -1,0 +1,32 @@
+h1 {
+  color: blue;
+  text-align: center;
+  font-family: 'Merienda One', cursive;
+  font-size: 45px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  border-style: dotted;
+  border-width: 4px;
+  padding-left: 27px;
+}
+.column {
+  flex: 50%;
+  max-width: 100%;
+  padding: 4px;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
